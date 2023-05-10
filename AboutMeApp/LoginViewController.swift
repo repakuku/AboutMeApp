@@ -14,8 +14,8 @@ final class LoginViewController: UIViewController {
     
     @IBOutlet var logInButton: UIButton!
     
-    private let username = "user"
-    private let password = "code"
+    let username = "user"
+    let password = "code"
     
     enum State {
         case forgotPassword
@@ -30,9 +30,7 @@ final class LoginViewController: UIViewController {
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         guard username == usernameTextField.text, password == passwordTextField.text else {
-            
             showAlert(for: .wrongUsernameOrPassword)
-            
             return false
         }
         
@@ -50,8 +48,6 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func anyForgotButtonTapped(_ sender: UIButton) {
-        var message = ""
-        
         if sender.titleLabel?.text == "Forgot User Name?" {
             showAlert(for: .forgotUsername)
         } else {
