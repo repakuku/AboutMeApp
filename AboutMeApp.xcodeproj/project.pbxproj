@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		07FFCF242A0B4BE00088A3DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFCF232A0B4BE00088A3DF /* AppDelegate.swift */; };
 		07FFCF262A0B4BE00088A3DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFCF252A0B4BE00088A3DF /* SceneDelegate.swift */; };
-		07FFCF282A0B4BE00088A3DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFCF272A0B4BE00088A3DF /* ViewController.swift */; };
+		07FFCF282A0B4BE00088A3DF /* LogInScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFCF272A0B4BE00088A3DF /* LogInScreenViewController.swift */; };
 		07FFCF2B2A0B4BE00088A3DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FFCF292A0B4BE00088A3DF /* Main.storyboard */; };
 		07FFCF2D2A0B4BE10088A3DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FFCF2C2A0B4BE10088A3DF /* Assets.xcassets */; };
 		07FFCF302A0B4BE10088A3DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FFCF2E2A0B4BE10088A3DF /* LaunchScreen.storyboard */; };
+		07FFCF382A0C17700088A3DF /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFCF372A0C17700088A3DF /* WelcomeScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07FFCF202A0B4BE00088A3DF /* AboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FFCF232A0B4BE00088A3DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07FFCF252A0B4BE00088A3DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		07FFCF272A0B4BE00088A3DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07FFCF272A0B4BE00088A3DF /* LogInScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInScreenViewController.swift; sourceTree = "<group>"; };
 		07FFCF2A2A0B4BE00088A3DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07FFCF2C2A0B4BE10088A3DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07FFCF2F2A0B4BE10088A3DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07FFCF312A0B4BE10088A3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07FFCF372A0C17700088A3DF /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		07FFCF172A0B4BE00088A3DF = {
 			isa = PBXGroup;
 			children = (
+				07FFCF372A0C17700088A3DF /* WelcomeScreenViewController.swift */,
 				07FFCF222A0B4BE00088A3DF /* AboutMeApp */,
 				07FFCF212A0B4BE00088A3DF /* Products */,
 			);
@@ -58,7 +61,7 @@
 			children = (
 				07FFCF232A0B4BE00088A3DF /* AppDelegate.swift */,
 				07FFCF252A0B4BE00088A3DF /* SceneDelegate.swift */,
-				07FFCF272A0B4BE00088A3DF /* ViewController.swift */,
+				07FFCF272A0B4BE00088A3DF /* LogInScreenViewController.swift */,
 				07FFCF292A0B4BE00088A3DF /* Main.storyboard */,
 				07FFCF2C2A0B4BE10088A3DF /* Assets.xcassets */,
 				07FFCF2E2A0B4BE10088A3DF /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FFCF282A0B4BE00088A3DF /* ViewController.swift in Sources */,
+				07FFCF282A0B4BE00088A3DF /* LogInScreenViewController.swift in Sources */,
+				07FFCF382A0C17700088A3DF /* WelcomeScreenViewController.swift in Sources */,
 				07FFCF242A0B4BE00088A3DF /* AppDelegate.swift in Sources */,
 				07FFCF262A0B4BE00088A3DF /* SceneDelegate.swift in Sources */,
 			);
