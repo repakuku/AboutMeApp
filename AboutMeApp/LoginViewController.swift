@@ -17,6 +17,12 @@ final class LoginViewController: UIViewController {
     private let username = "user"
     private let password = "code"
     
+    enum State {
+        case forgotPassword
+        case forgotUsername
+        case wrongUsernameOrPassword
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         logInButton.layer.cornerRadius = 10
@@ -25,17 +31,7 @@ final class LoginViewController: UIViewController {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         guard username == usernameTextField.text, password == passwordTextField.text else {
             
-            let alertController = UIAlertController(
-                title: "Invalid login or password",
-                message: "Please, enter correct login and password",
-                preferredStyle: .alert
-                )
-            let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-                self.passwordTextField.text = ""
-            }
-            
-            alertController.addAction(okAction)
-            present(alertController, animated: true)
+            showAlert(for: .wrongUsernameOrPassword)
             
             return false
         }
@@ -57,25 +53,47 @@ final class LoginViewController: UIViewController {
         var message = ""
         
         if sender.titleLabel?.text == "Forgot User Name?" {
-            message = "Your name is \(username)😉"
+            showAlert(for: .forgotUsername)
         } else {
-            message = "Your password is \(password)😉"
+            showAlert(for: .forgotPassword)
         }
-        
-        let alertController = UIAlertController(
-            title: "Oops!",
-            message: message,
-            preferredStyle: .alert
-        )
-        let okAction = UIAlertAction(title: "OK", style: .default)
-        
-        alertController.addAction(okAction)
-        self.present(alertController, animated: true)
     }
     
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         usernameTextField.text = ""
         passwordTextField.text = ""
+    }
+    
+    private func showAlert(for state: State) {
+        
+        var title = ""
+        var message = ""
+        
+        var okAction = UIAlertAction(title: "OK", style: .default)
+        
+        switch state {
+        case .forgotUsername:
+            title = "Oops!"
+            message = "Your name is \(username)😉"
+        case .forgotPassword:
+            title = "Oops!"
+            message = "Your password is \(password)😉"
+        case .wrongUsernameOrPassword:
+            title = "Invalid login or password"
+            message = "Please, enter correct login and password"
+            okAction = UIAlertAction(title: "OK", style: .default) { _ in
+                self.passwordTextField.text = ""
+            }
+        }
+        
+        let alertController = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true)
     }
 }
