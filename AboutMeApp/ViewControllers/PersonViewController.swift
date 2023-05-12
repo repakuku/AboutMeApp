@@ -14,10 +14,14 @@ final class PersonViewController: UIViewController {
     @IBOutlet var companyLabel: UILabel!
     @IBOutlet var jobTitleLabel: UILabel!
     
+    @IBOutlet var imageView: UIImageView!
+    
+
     var person: Person!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let bioVC = segue.destination as? BioViewController else { return }
+        bioVC.person = person
     }
 
     override func viewDidLoad() {
@@ -29,6 +33,8 @@ final class PersonViewController: UIViewController {
         lastNameLabel.text = person.lastName
         companyLabel.text = person.company
         jobTitleLabel.text = person.jobTitle
+        
+        imageView.image = UIImage(named: person.image)
     }
 
 }
