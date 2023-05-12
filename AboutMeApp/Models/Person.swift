@@ -7,7 +7,7 @@
 
 struct Person {
     let firstName: String
-    let secondName: String
+    let lastName: String
     let company: String
     let jobTitle: String
     let bio: String
@@ -15,8 +15,8 @@ struct Person {
     static func getPerson() -> Person {
         Person(
             firstName: "Алексей",
-            secondName: "Турулин",
-            company: "Academics, New York",
+            lastName: "Турулин",
+            company: "Advanced Academic Programs, NY",
             jobTitle: "Преподаватель",
             bio: "Бла бла бла всякое обо мне"
         )

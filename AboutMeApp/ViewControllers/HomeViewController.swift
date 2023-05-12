@@ -11,11 +11,11 @@ final class HomeViewController: UIViewController {
 
     @IBOutlet var welcomeLabel: UILabel!
     
-    var username = ""
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        welcomeLabel.text = "Welcome, \(username)!"
+        welcomeLabel.text = "Welcome, \(user.username)!"
     }
 }
