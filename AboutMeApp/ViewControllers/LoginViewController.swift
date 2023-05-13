@@ -31,7 +31,7 @@ final class LoginViewController: UIViewController {
         guard let homeVC = tabBarController.viewControllers?.first as? HomeViewController else { return }
         guard let navigationController = tabBarController.viewControllers?.last as? UINavigationController else { return }
         guard let personVC = navigationController.topViewController as? PersonViewController else { return }
-        homeVC.user = user
+        homeVC.username = user.username
         personVC.person = user.person
     }
     

@@ -12,6 +12,7 @@
 		07286D7A2A0DE79A00F911D2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07286D792A0DE79A00F911D2 /* Person.swift */; };
 		07286D7C2A0DE7FB00F911D2 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07286D7B2A0DE7FB00F911D2 /* PersonViewController.swift */; };
 		07286D7E2A0DE82D00F911D2 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07286D7D2A0DE82D00F911D2 /* BioViewController.swift */; };
+		076133EE2A0F366A003068DF /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076133ED2A0F366A003068DF /* PhotoViewController.swift */; };
 		07FFCF242A0B4BE00088A3DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFCF232A0B4BE00088A3DF /* AppDelegate.swift */; };
 		07FFCF262A0B4BE00088A3DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFCF252A0B4BE00088A3DF /* SceneDelegate.swift */; };
 		07FFCF282A0B4BE00088A3DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FFCF272A0B4BE00088A3DF /* LoginViewController.swift */; };
@@ -27,6 +28,7 @@
 		07286D792A0DE79A00F911D2 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		07286D7B2A0DE7FB00F911D2 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		07286D7D2A0DE82D00F911D2 /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		076133ED2A0F366A003068DF /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		07FFCF202A0B4BE00088A3DF /* AboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FFCF232A0B4BE00088A3DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07FFCF252A0B4BE00088A3DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				07286D7B2A0DE7FB00F911D2 /* PersonViewController.swift */,
 				07286D7D2A0DE82D00F911D2 /* BioViewController.swift */,
 				07286D492A0DC2CF00F911D2 /* Extension + UIView.swift */,
+				076133ED2A0F366A003068DF /* PhotoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				07FFCF242A0B4BE00088A3DF /* AppDelegate.swift in Sources */,
 				07FFCF262A0B4BE00088A3DF /* SceneDelegate.swift in Sources */,
 				07286D7E2A0DE82D00F911D2 /* BioViewController.swift in Sources */,
+				076133EE2A0F366A003068DF /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
