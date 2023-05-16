@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		07286D4A2A0DC2CF00F911D2 /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07286D492A0DC2CF00F911D2 /* Extension + UIView.swift */; };
 		07286D782A0DE76C00F911D2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07286D772A0DE76C00F911D2 /* User.swift */; };
-		07286D7A2A0DE79A00F911D2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07286D792A0DE79A00F911D2 /* Person.swift */; };
 		07286D7C2A0DE7FB00F911D2 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07286D7B2A0DE7FB00F911D2 /* PersonViewController.swift */; };
 		07286D7E2A0DE82D00F911D2 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07286D7D2A0DE82D00F911D2 /* BioViewController.swift */; };
 		076133EE2A0F366A003068DF /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076133ED2A0F366A003068DF /* PhotoViewController.swift */; };
@@ -25,7 +24,6 @@
 /* Begin PBXFileReference section */
 		07286D492A0DC2CF00F911D2 /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
 		07286D772A0DE76C00F911D2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		07286D792A0DE79A00F911D2 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		07286D7B2A0DE7FB00F911D2 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		07286D7D2A0DE82D00F911D2 /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 		076133ED2A0F366A003068DF /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 				07FFCF372A0C17700088A3DF /* HomeViewController.swift */,
 				07286D7B2A0DE7FB00F911D2 /* PersonViewController.swift */,
 				07286D7D2A0DE82D00F911D2 /* BioViewController.swift */,
-				07286D492A0DC2CF00F911D2 /* Extension + UIView.swift */,
 				076133ED2A0F366A003068DF /* PhotoViewController.swift */,
 			);
 			path = ViewControllers;
@@ -95,9 +92,16 @@
 			isa = PBXGroup;
 			children = (
 				07286D772A0DE76C00F911D2 /* User.swift */,
-				07286D792A0DE79A00F911D2 /* Person.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		076133EF2A12E4B3003068DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				07286D492A0DC2CF00F911D2 /* Extension + UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		07FFCF172A0B4BE00088A3DF = {
@@ -122,6 +126,7 @@
 				07286D722A0DE70D00F911D2 /* App */,
 				07286D732A0DE71F00F911D2 /* ViewControllers */,
 				07286D762A0DE75400F911D2 /* Models */,
+				076133EF2A12E4B3003068DF /* Extensions */,
 				07286D742A0DE73000F911D2 /* Storyboards */,
 				07286D752A0DE74900F911D2 /* Resources */,
 			);
@@ -204,7 +209,6 @@
 				07286D782A0DE76C00F911D2 /* User.swift in Sources */,
 				07286D7C2A0DE7FB00F911D2 /* PersonViewController.swift in Sources */,
 				07FFCF382A0C17700088A3DF /* HomeViewController.swift in Sources */,
-				07286D7A2A0DE79A00F911D2 /* Person.swift in Sources */,
 				07FFCF242A0B4BE00088A3DF /* AppDelegate.swift in Sources */,
 				07FFCF262A0B4BE00088A3DF /* SceneDelegate.swift in Sources */,
 				07286D7E2A0DE82D00F911D2 /* BioViewController.swift in Sources */,

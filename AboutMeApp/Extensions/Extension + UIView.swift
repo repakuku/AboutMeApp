@@ -8,7 +8,22 @@
 import UIKit
 
 extension UIView {
-    func addVerticalGradientLayer(topColor: UIColor, bottomColor: UIColor) {
+    func addVerticalGradientLayer() {
+        
+        let topColor = UIColor(
+            red: 210/255,
+            green: 109/255,
+            blue: 128/255,
+            alpha: 1
+        )
+
+        let bottomColor = UIColor(
+            red: 107/255,
+            green: 148/255,
+            blue: 230/255,
+            alpha: 1
+        )
+        
         let gradient = CAGradientLayer()
         gradient.frame = bounds
         gradient.colors = [topColor.cgColor, bottomColor.cgColor]
@@ -18,17 +33,3 @@ extension UIView {
         layer.insertSublayer(gradient, at: 0)
     }
 }
-
-let primaryColor = UIColor(
-    red: 210/255,
-    green: 109/255,
-    blue: 128/255,
-    alpha: 1
-)
-
-let secondaryColor = UIColor(
-    red: 107/255,
-    green: 148/255,
-    blue: 230/255,
-    alpha: 1
-)

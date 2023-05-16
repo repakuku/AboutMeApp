@@ -131,7 +131,7 @@
             </objects>
             <point key="canvasLocation" x="1530" y="-4"/>
         </scene>
-        <!--Alexey Turulin-->
+        <!--Full Name-->
         <scene sceneID="m3K-B2-Hso">
             <objects>
                 <viewController id="qfd-rM-0lJ" customClass="PersonViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -212,7 +212,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BmR-av-TGy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BmR-av-TGy">
                                 <rect key="frame" x="118.5" y="112.5" width="83.5" height="83.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="BmR-av-TGy" secondAttribute="height" multiplier="1:1" id="BZs-J3-FaB"/>
@@ -230,7 +230,7 @@
                             <constraint firstItem="66F-5f-plr" firstAttribute="centerY" secondItem="RLT-uk-grY" secondAttribute="centerY" id="jzK-aG-8Gt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Alexey Turulin" id="FA3-Dr-7hK">
+                    <navigationItem key="navigationItem" title="Full Name" id="FA3-Dr-7hK">
                         <barButtonItem key="rightBarButtonItem" title="Bio" id="Jh3-0A-veu">
                             <connections>
                                 <segue destination="svt-PA-2h9" kind="show" id="Cwd-rX-sKY"/>
@@ -249,7 +249,7 @@
             </objects>
             <point key="canvasLocation" x="3069" y="-4"/>
         </scene>
-        <!--Alexey Turulin Bio-->
+        <!--Full Name Bio-->
         <scene sceneID="Q39-PQ-JR7">
             <objects>
                 <viewController id="svt-PA-2h9" customClass="BioViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -274,7 +274,7 @@
                             <constraint firstItem="q81-df-OJB" firstAttribute="trailing" secondItem="znD-yk-rNG" secondAttribute="trailing" constant="16" id="yuk-J8-zu8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Alexey Turulin Bio" id="t5q-4p-uDP">
+                    <navigationItem key="navigationItem" title="Full Name Bio" id="t5q-4p-uDP">
                         <barButtonItem key="rightBarButtonItem" title="Photo" id="fBf-zW-hCy">
                             <connections>
                                 <segue destination="XIi-4w-G4i" kind="show" id="rg8-sq-thU"/>

@@ -15,11 +15,13 @@ final class PhotoViewController: UIViewController {
     var firstImage: UIImage!
     var secondImage: UIImage!
     
+    var user: User!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        firstImageView.image = firstImage
-        secondImageView.image = secondImage
+        view.addVerticalGradientLayer()
+        firstImageView.image = UIImage(named: user.person.firstHobbyImage)
+        secondImageView.image = UIImage(named: user.person.secondHobbyImage)
     }
     
     override func viewWillLayoutSubviews() {

@@ -12,7 +12,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    let user = User.getUser()
+    private let user = User.getUser()
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         guard user.username == usernameTextField.text, user.password == passwordTextField.text else {
@@ -29,10 +29,11 @@ final class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarController = segue.destination as? UITabBarController else { return }
         guard let homeVC = tabBarController.viewControllers?.first as? HomeViewController else { return }
-        guard let navigationController = tabBarController.viewControllers?.last as? UINavigationController else { return }
+        guard let viewControllers = tabBarController.viewControllers,
+              let navigationController = viewControllers.last as? UINavigationController else { return }
         guard let personVC = navigationController.topViewController as? PersonViewController else { return }
-        homeVC.username = user.username
-        personVC.person = user.person
+        homeVC.user = user
+        personVC.user = user
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
